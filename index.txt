@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+if(isset($_POST['b1'])){
+$ids = array($_POST['Marks']);
+}
+?>
+<table width="200" border="2">
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Marks</td>
+  </tr>
+  <tr>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Id']); echo $_POST['Id'][0].'<br>';}?></td>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Name']);
+echo $_POST['Name'][0].'<br>';
+}?></td>
+    <td><?php
+if(isset($_POST['b1'])){
+$ids = array($_POST['Marks']);
+echo $_POST['Marks'][0].'<br>';
+}
+?></td>
+  </tr>
+  <tr>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Id']); echo $_POST['Id'][1].'<br>';}?></td>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Name']);
+echo $_POST['Name'][1].'<br>';
+}?></td>
+    <td><?php
+if(isset($_POST['b1'])){
+$ids = array($_POST['Marks']);
+echo $_POST['Marks'][1].'<br>';
+}
+?></td>
+  </tr>
+  <tr>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Id']); echo $_POST['Id'][2].'<br>';}?></td>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Name']);
+echo $_POST['Name'][2].'<br>';
+}?></td>
+    <td><?php
+if(isset($_POST['b1'])){
+$ids = array($_POST['Marks']);
+echo $_POST['Marks'][2].'<br>';
+}
+?></td>
+  </tr>
+  <tr>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Id']); echo $_POST['Id'][3].'<br>';}?></td>
+    <td><?php if(isset($_POST['b1'])){
+$ids = array($_POST['Name']);
+echo $_POST['Name'][3].'<br>';
+}?></td>
+    <td><?php
+if(isset($_POST['b1'])){
+$ids = array($_POST['Marks']);
+echo $_POST['Marks'][3].'<br>';
+}
+?></td>
+  </tr>
+</table>
+
+<form method="post">
+<input type="text" name="Id[]"/>
+<br />
+<input type="text" name="Name[]"/>
+<br />
+<input type="text" name="Marks[]"/>
+<br />
+<input type="text" name="Id[]"/>
+<br />
+<input type="text" name="Name[]"/>
+<br />
+<input type="text" name="Marks[]"/>
+<br />
+<input type="text" name="Id[]"/>
+<br />
+<input type="text" name="Name[]"/>
+<br />
+<input type="text" name="Marks[]"/>
+<br />
+<input type="text" name="Id[]"/>
+<br />
+<input type="text" name="Name[]"/>
+<br />
+<input type="text" name="Marks[]"/>
+<br />
+<input type="text" name="Id[]"/>
+<br />
+<input type="text" name="Name[]"/>
+<br />
+<input type="text" name="Marks[]"/>
+<br />
+<input type="submit" value="Show" name="b1"/>
+</form>
+</body>
+</html>
